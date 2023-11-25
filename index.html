@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halloween</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="javascrip/halloween.js"></script>
+</head>
+<body>
+  <!--Este ejercicio es solo por diversión-->
+  <!--Tenemos que buscar una imagen wallpaper-->
+  
+  <div id="escenario">
+    <!-- Voy a reservar un espacio para un evento -->
+    <div id="puerta" onmouseover="show('ghost'); sound('puertasound')" onmouseout="hide('ghost')">
+      <img id="ghost" src="../images/fantasma.png" alt="fantasma">
+      <audio id="puertasound">
+        <source src="../pesadilla/sonido/puertasound.mp3" type="audio/mp3">
+      </audio>
+
+    </div>
+
+    <div id="cruz" onmouseover="show('explota'); sound('pelotasound')" onmouseout="hide('explota')">
+      <img id="explota" src="../images/explosion.gif" alt="explota">
+
+      <audio id="pelotasound">
+        <source src="../pesadilla/sonido/explosionsound.mp3" type="audio/mp3">
+      </audio>
+    </div>
+
+    <div id="salon" onmouseover="show('woman'); sound('niñasound')" onmouseout="hide('woman')">
+      <img id="woman" src="../images/woman.png" alt="woman">
+
+      <audio id="niñasound">
+        <source src="../pesadilla/sonido/mujersound.mp3" type="audio/mp3">
+      </audio>
+    </div>
+
+    
+  </div>
+
+</body>
+</html>
